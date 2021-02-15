@@ -1,0 +1,35 @@
+body {
+    background-color: #050A30;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+
+
+table {
+    border: 1px solid #7EC8E3;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    font-size: x-large;
+    border-collapse: separate;
+}
+tr {
+    border: 1px solid #7EC8E3;
+    padding: 5px;
+    color: #7EC8E3;
+}
+th {
+    border: 1px solid #7EC8E3;
+    padding: 5px;
+}
+td {
+    border: 1px solid #7EC8E3;
+    padding: 5px;
+}
+th {
+    border: 1px solid #7EC8E3;
+    padding: 5px;
+}
