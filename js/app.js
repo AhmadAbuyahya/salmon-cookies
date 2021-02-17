@@ -36,7 +36,7 @@ function Shop(name, min, max, avg) {
   this.array = [];
   this.total = 0;
   allCookieShops.push(this);
-
+  this.getNumOfCustomers();
 }
 Shop.prototype.getNumOfCustomers = function () {
   for (let i = 0; i < hoursOpen.length; i++) {
@@ -57,12 +57,10 @@ Shop.prototype.renderHeader = function () {
     let thEl = document.createElement('th');
     thEl.textContent = hoursOpen[i];
     trEl.appendChild(thEl);
-
   }
   const tCellLast = document.createElement('th');
   trEl.appendChild(tCellLast);
   tCellLast.textContent = 'Daily Location Total';
-
 };
 Shop.prototype.renderData = function () {
   const trEl = document.createElement('tr');
@@ -78,7 +76,6 @@ Shop.prototype.renderData = function () {
   const tdTotalEl = document.createElement('td');
   trEl.appendChild(tdTotalEl);
   tdTotalEl.textContent = this.total;
-
 };
 Shop.prototype.renderFooter = function () {
   const trEl = document.createElement('tr');
@@ -100,7 +97,6 @@ Shop.prototype.renderFooter = function () {
   const tdGrandEl = document.createElement('td');
   trEl.appendChild(tdGrandEl);
   tdGrandEl.textContent = grandTotal;
-
 };
 const seattle = new Shop('Seattle', 23, 65, 6.3);
 const tokyo = new Shop('Tokyo', 3, 24, 1.2);
@@ -109,17 +105,27 @@ const paris = new Shop('Paris', 20, 38, 2.3);
 const lima = new Shop('Lima', 2, 16, 4.6);
 
 Shop.prototype.renderHeader();
-seattle.getNumOfCustomers();
 seattle.renderData();
-tokyo.getNumOfCustomers();
 tokyo.renderData();
-dubai.getNumOfCustomers();
 dubai.renderData();
-paris.getNumOfCustomers();
 paris.renderData();
-lima.getNumOfCustomers();
 lima.renderData();
 Shop.prototype.renderFooter();
+
+const form = document.getElementById('shops-form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const name = event.target.name.value;
+  const min = event.target.min.value;
+  const max = event.target.max.value;
+  const avg = event.target.avg.value;
+  const userShop = new Shop(name, min, max, avg);
+  var rowCount = tableEl.rows.length;
+  tableEl.deleteRow(rowCount - 1);
+  userShop.renderData();
+  Shop.prototype.renderFooter();
+  form.reset();
+});
 
 
 
@@ -187,7 +193,6 @@ Shop.prototype.renderFooter();
 // seattle.getNumOfCustomers(23,65);
 // seattle.render();
 
-
 // const tokyo = {
 //   name: 'Tokyo',
 //   min: 3,
@@ -228,9 +233,6 @@ Shop.prototype.renderFooter();
 // };
 // tokyo.getNumOfCustomers(23,65);
 // tokyo.render();
-
-
-
 
 // const dubai = {
 //   name: 'Dubai',
@@ -273,8 +275,6 @@ Shop.prototype.renderFooter();
 // dubai.getNumOfCustomers(23,65);
 // dubai.render();
 
-
-
 // const paris = {
 //   name: 'Paris',
 //   min: 20,
@@ -315,8 +315,6 @@ Shop.prototype.renderFooter();
 // };
 // paris.getNumOfCustomers(23,65);
 // paris.render();
-
-
 
 // const lima = {
 //   name: 'Lima',

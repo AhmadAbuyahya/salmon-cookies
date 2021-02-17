@@ -1,14 +1,12 @@
 body {
     background-color:#363333;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
+    /* b */
 }
 table {
     border: 3px solid #ddd;
     padding: 5px;
     margin: auto;
-    margin-top: 10%;
+    
     text-align: center;
     font-size: x-large;
     /* border-collapse: separate; */
@@ -27,11 +25,34 @@ td {
     padding: 5px;
 }
 header{
-    margin: 20px;
-    text-align: center;
+    margin: 10px;
+    text-align: left;
+    background-image: url('../../images/cookies.jpg');
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a{
     text-decoration: none;
     font-size: xx-large;
     color: #ddd;
+    background-color: #363333;
+    padding: 10px 50px 10px 50px;
+    border-radius: 70px;
+    border: 3px #000000 solid ;
+}
+form{
+    text-align: center;
+}
+label{
+    color: #ddd;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+}
+legend{
+    color: #ddd;
+    font-size: xx-large;
+    margin: 10px;
+    padding: 10px;
 }
