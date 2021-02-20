@@ -1,27 +1,28 @@
 body {
-    background-color:#363333;
+    background-color:#e6b6e3;
     /* b */
 }
 table {
-    border: 3px solid #ddd;
+    border: 3px solid #6abb75;
     padding: 5px;
     margin: auto;
     
     text-align: center;
     font-size: x-large;
+    
     /* border-collapse: separate; */
 }
 tr {
-    border: 3px solid #ddd;
+    border: 3px solid #6abb75;
     padding: 5px;
-    color: #ddd;
+    color: #064e04;
 }
 th {
-    border: 3px solid #ddd;
+    border: 3px solid #6abb75;
     padding: 5px;
 }
 td {
-    border: 3px solid #ddd;
+    border: 3px solid #6abb75;
     padding: 5px;
 }
 header{
@@ -31,28 +32,52 @@ header{
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    border:3px rgb(61, 1, 38) solid;
 }
 a{
     text-decoration: none;
     font-size: xx-large;
-    color: #ddd;
-    background-color: #363333;
+    color: #023b00;
+    background-color: #e6b6e3;
     padding: 10px 50px 10px 50px;
     border-radius: 70px;
-    border: 3px #000000 solid ;
+    border: 3px #023b00 solid ;
+    font-family: 'RocknRoll One', sans-serif;
 }
 form{
     text-align: center;
+    margin-bottom: 30px;
 }
 label{
-    color: #ddd;
+    color: #023b00;
     font-size: larger;
     margin: 10px;
     padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 legend{
-    color: #ddd;
+    color: #023b00;
     font-size: xx-large;
     margin: 10px;
     padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+    /* padding: 10px; */
+    color:#064e04;
+    font-size: x-large;
+}
+footer p{
+    line-height: 2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+td:hover{
+
+    background-color: rgb(189, 119, 174);
+}
+th:hover{
+    background-color: rgb(189, 119, 174);
+
 }

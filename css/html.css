@@ -2,39 +2,45 @@
     box-sizing: border-box;
 }
 #ugly{
-    width: 200px;
-    height: 70px;
+    width: 250px;
+    height: 130px;
 }
 header nav {
-    background-color: #363333;
+  
+    background-color: rgb(54, 51, 51);
     width: 100%;
+    vertical-align: middle;
   }
   header nav ul {
-    padding: 15px;
+    vertical-align: middle;
   }
   header nav ul li {
     display: inline;
-    color: #ddd;
-    padding: 75px;
+    color: #e6b6e3;
+    padding: 60px;
     vertical-align: middle;
     font-size: xx-large;
-    font-family: 'Truculenta', sans-serif;
-
+    font-family: 'Acme', sans-serif;
 
   }
   a {
       text-decoration: none;
-      color: #ddd;
+      color: #e6b6e3;
+      border: 2px #e6b6e3 solid ;
+      padding: 10px;
+      border-radius: 50px;
       
   }
   body {
-      background-color: #ddd;
+      /* background-color: #e6b6e3; */
+      /* background-image: url(../images/bg2.jpg); */
   }
   .container {
-      margin: 15px;
+      /* margin: 15px; */
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    background-color: rgb(221, 140, 221, .3);
   }
   
   img {
@@ -42,13 +48,50 @@ header nav {
   }
   
   .image {
-    flex-basis: 40%
+    flex-basis: 40%;
+    margin: 10px;
+
   }
   
   .text {
     font-size: 30px;
     padding-left: 20px;
     color: #363333;
-    font-family: 'Truculenta', sans-serif;
+    font-family: 'Acme', sans-serif;
+    color:rgb(48, 47, 47) ;
+
 
   }
+  #hero{
+    height: 500px;
+    background-image: url(../images/bg3.jpg);
+    vertical-align: middle;
+  }
+  #hero p{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(48, 47, 47) ;
+    padding-top: 150px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 30px;
+
+  }
+  #over{
+    background-color: rgb(221, 140, 221, .3);
+    height: 100%;
+  }
+  footer{
+    text-align: center;
+    margin: px;
+    /* padding: 10px; */
+    color:rgb(48, 47, 47) ;
+    font-size: x-large;
+    background-color: rgb(221, 140, 221, .3);
+  }
+  footer p{
+    line-height: 2em;
+    font-family: 'Acme', sans-serif;
+}
+#asd{
+  margin-top: 150px;
+}
